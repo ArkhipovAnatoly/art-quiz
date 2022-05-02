@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": ["airbnb-base"],
+  "rules": {
+    "no-underscore-dangle": ["error", {"allowAfterThis": true}],
+    "no-plusplus": ["error", {"allowForLoopAfterthoughts": true}],
+    "no-extend-native": ["error", {"exceptions": ["Array"]}]
+  }
+}

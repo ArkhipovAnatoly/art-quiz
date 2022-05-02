@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Art Quiz</title>
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="question">
+          <div class="question-header">
+            <button class="question-button"></button>
+            <h2 class="question-title"></h2>
+            <button class="home-btn"></button>
+          </div>
+          <span class="question-timer">00:00</span>
+          <div class="images"></div>
+          <img class="question-image" alt="photo" />
+          <div class="result"></div>
+          <div class="answer"></div>
+          <div class="card">
+            <img class="card-icon" alt="card-icon" />
+            <img class="card-image" alt="card-photo" />
+            <div class="card-info">
+              <span class="card-text"></span>
+              <span class="card-text"></span>
+              <span class="card-text"></span>
+            </div>
+            <button class="card-btn">Далее</button>
+          </div>
+          <div class="card-result">
+            <span class="card-text"></span>
+            <span class="card-text"></span>
+            <button class="card-btn exit-btn">Выход</button>
+          </div>
+        </div>
+
+        <div class="home-page" id="home-page">
+          <div class="settings-menu">
+            <h4 class="settings-menu-title">Settings</h4>
+
+            <!--        <div class="language-setting setting">
+              <p class="setting-name">Language:</p>
+              <div class="select">
+                <select class="language">
+                  <option value="EN" selected>English</option>
+                  <option value="RU">Русский</option>
+                </select>
+              </div>
+            </div> -->
+            <div class="timer-setting setting">
+              <p class="setting-name">Таймер:</p>
+              <label class="switch">
+                <input id="switch-timer" type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              <div class="select">
+                <select class="timer-value">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15" selected>15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                </select>
+              </div>
+            </div>
+            <div class="sound-setting setting">
+              <p class="setting-name">Звук:</p>
+
+              <label class="switch">
+                <input id="switch-sound" type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+
+              <div class="volume">
+                <input id="volume-setting" type="range" max="100" value="50" />
+              </div>
+            </div>
+          </div>
+          <h1 class="title">art quiz</h1>
+          <div class="controls">
+            <button data-id="1">Художники</button>
+            <button data-id="2">Картины</button>
+            <button data-id="3">Настройки</button>
+          </div>
+        </div>
+        <div class="home">
+          <button class="home-btn"></button>
+          <span> Выберите категорию</span>
+        </div>
+        <div class="category-painters"></div>
+        <div class="category-pictures"></div>
+        <div class="detail">
+          <div class="detail-wrapper"></div>
+          <span class="detail-info"></span>
+          <button class="detail-close"></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
